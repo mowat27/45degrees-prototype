@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,800;0,900;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Nunito:ital,wght@0,300;0,800;0,900;1,600&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
+    background: #f0f0f0;
+}
+
+* {
+    /* outline: 1px solid yellow; */
+}
+
+header {
+    text-align: center;
+    overflow: hidden;
+    height: 370px;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #252525;
+    background: black;
+    color: white;
+}
+
+main {
+    text-align: center;
+    margin: 1em;
+}
+
+nav {
+    text-align: right;
+    padding: 0.5em;
+}
+
+ul {
+    display: none;
+}
+
+.active {
+    font-weight: bold;
+    color: orange;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    position: relative;
+    background: black;
+    background-position: top;
+    max-width: 420px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 370px;
+    background: black;
+}
+
+.saltire {
+    position: absolute;
+    top: calc(370px - 256.18px);
+    left: 0;
+}
+
+.degrees {
+    position: absolute;
+    font-size: 5em;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.mc {
+    position: absolute;
+    top: calc(370px - 240px);
+    left: 50%;
+    transform: translateX(-50%) rotate(29deg);
+    font-size: 1.5em;
+    width: 150%;
+}
+
+.logo span {
+    display: block;
+    font-size: 4em;
+    transform: rotate(-30.5deg);
+}
+
+.meet-report {
+    margin: 0 0 3em;
+}
+
+.meet-hero {
+    width: 100%;
+    max-width: 400px;
+    clip-path: circle(35% at 50% 50%);
+}
+
+.cta {
+    display: inline-block;
+    background: #2B489A;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+
+.meet-summary {
+    font-family: Lora, serif;
+    line-height: 1.8em;
+}
+
+@media(min-width: 370px) {
+    .mc {
+        top: calc(370px - 220px);
+    }
+}
+
+@media(min-width: 400px) {
+    .logo {
+        width: 420px;
+        margin: auto;
+    }
+    .banner {
+        width: unset;
+        margin: auto;
+        background-image: url('nevis.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0% 50%;
+    }
+}
+
+@media(min-width: 800px) {
+    .logo {
+        width: 100%;
+    }
+    .banner {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 420px auto;
+        max-width: 1500px;
+        margin: auto;
+    }
+    .hero {
+        display: unset;
+        background-image: url('nevis.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0% 60%;
+    }
+    nav {
+        margin: 0.8em;
+    }
+    ul {
+        visibility: unset;
+        margin: auto;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .hamburger {
+        display: none;
+    }
+    li {
+        margin-right: 2em;
+    }
+    li:nth-child(4) {
+        margin-right: 0;
+    }
+}
